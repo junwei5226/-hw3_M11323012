@@ -1,13 +1,4 @@
 #%%
-import segmentation_models_pytorch as smp
-import torch.nn as nn
-
-model = smp.Unet(
-    encoder_name="resnet34",        # backbone
-    encoder_weights="imagenet",     # 使用 imagenet 預訓練權重
-    in_channels=3,                  # RGB input
-    classes=1,                      # 二分類的輸出遮罩
-)
 
 #%%
 import torch
